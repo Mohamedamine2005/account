@@ -36,5 +36,6 @@ client.on('ready', () => {
  
 client.on('ready',async () => {
   client.channels.find(ch => ch.id === "551419457336115213" && ch.type === 'voice').join();
-});
+})
+;
 client.login(process.env.BOT_TOKEN);
