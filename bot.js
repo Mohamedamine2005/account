@@ -34,7 +34,8 @@ client.on('ready', () => {
   console.log(`channels! [ " ${client.channels.size} " ]`);
   console.log('=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=')
  
-client.user.setGame("So9 Mok?", "https://www.twitch.tv/mohamedaminegamer");
+client.on('ready',async () => {
+  client.channels.find(ch => ch.id === "551419457336115213" && ch.type === 'voice').join();
 });
  
  
